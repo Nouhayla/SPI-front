@@ -1,0 +1,50 @@
+<div class="container" ng-controller="enseignantDetailController" >
+<div>
+
+<table class="table" >
+<thead class="thead-dark">
+	<tr>
+		<th scope="col" >Code Enseignant</th>
+		<th>Adresse</th>
+		<th>Code Postal</th>
+		<th>Email Personnelle</th>
+		<th>Email UBO </th>
+		<th>Mobile</th>
+		<th>Nom </th>
+		<th>Pays</th>
+		<th>Prenom</th>
+		<th>Sexe </th>
+		<th>Telephone</th>
+		<th>Type</th>
+		<th>Ville</th>
+		
+	</tr>
+	
+	</thead>
+	<tr >
+		
+		<td> {{ detailEnseignant.noEnseignant}} </td>
+		<td> {{ detailEnseignant.adresse}} </td>
+		<td> {{ detailEnseignant.codePostal}} </td>
+		<td> {{ detailEnseignant.emailPerso}} </td>
+		<td> {{ detailEnseignant.emailUbo }} </td>
+		<td> {{ detailEnseignant.mobile }} </td>
+		<td> {{ detailEnseignant.nom }} </td>
+		<td> {{ detailEnseignant.pays}} </td>
+		<td> {{ detailEnseignant.prenom}} </td>
+		<td> {{ detailEnseignant.sexe }} </td>
+		<td> {{ detailEnseignant.telephone}} </td>
+		<td> {{detailEnseignant.type }} </td>
+		<td> {{ detailEnseignant.ville}} </td>
+		<td><button  class="btn btn-default"  > <a href="#updateEnseignant/{{detailEnseignant.noEnseignant}}">Editer</button> </td>
+		
+		
+		
+		
+	</tr>
+	
+
+
+</table>
+</div>
+</div>

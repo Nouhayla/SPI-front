@@ -1,0 +1,36 @@
+<div class="container" ng-controller="formationDetailController" >
+<div>
+
+<table class="table" >
+
+	<tr>
+		<th>Code Formation</th>
+		<th>Debut Accreditation</th>
+		<th>Diplome</th>
+		<th>Double Diplome</th>
+		<th>Fin Accreditation </th>
+		<th>NO Anne  </th>
+		<th>Nom Formation</th>
+		
+	</tr>
+	
+	
+	<tr ng-repeat=" df in detailFormation " >
+		
+		<td> {{ df.codeFormation}} </td>
+		<td> {{ df.debutAccreditation}} </td>
+		<td> {{ df.diplome }} </td>
+		<td> {{ df.doubleDiplome }} </td>
+		<td> {{ df.finAccreditation }} </td>
+		<td> {{ df.n0Annee }} </td>
+		<td> {{ df.nomFormation }} </td>
+		<td><button  class="btn btn-default"  > <a href="#updateFormation/{{df.codeFormation}}">Editer</button> </td>
+		
+		
+		
+		
+	</tr>
+	
+
+
+</table>

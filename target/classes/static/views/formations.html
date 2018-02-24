@@ -1,0 +1,34 @@
+<div class="container" ng-controller="formationController" >
+
+<h1>Gestion des Formations</h1> 
+<!-- Indicates a successful or positive action -->
+
+<button class="btn btn-default"  class="btn btn-success"><a href="#ajouterFormation">Ajouter Formation</button></a>
+
+<table class="table">
+	<tr>
+		<th>Code Formation</th>
+		
+		<th>Formation</th>
+		
+	</tr>
+	
+	<tr ng-repeat=" formation in formations ">
+	
+		
+		<td> {{ formation.codeFormation }} </td>
+		<td> {{ formation.nomFormation }} </td>	
+		<td ><button ng-click=deletedata(formation.codeFormation) class="btn btn-default" >Supprimer</button> </td>
+		<td ><button ng-click="detail(formation.nomFormation)" class="btn btn-default" > <a href="#detailFormation/{{formation.nomFormation}}">Detail</button> </td>
+		
+			
+	</tr>
+	
+	
+
+
+</table>
+
+
+
+</div>

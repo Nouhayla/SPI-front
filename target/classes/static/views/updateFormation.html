@@ -1,0 +1,60 @@
+<div class="container" ng-controller="updateFormationController" >
+<div class="form" >
+	
+	<div class="input-group">
+		<label>
+			Code Formation <input  ng-disabled="!operation" type="text" class="form-control" ng-model="dt.codeFormation" placeholder="Tapez code formation">
+		</label>
+	</div>
+	<div class="input-group">
+		<label>
+			Debut Accreditation : <input type="text" class="form-control" ng-model="dt.debutAccreditation" placeholder="Tapez Debut Accreditation">
+		</label>
+	</div>
+		<div class="input-group">
+		<label>
+			Diplome : 
+		 <select class="form-control" id="sel1" ng-model="dt.diplome" placeholder="Tapez Diplome">
+        <option>L</option>
+        <option>M</option>
+        <option>D</option>
+       
+      </select>
+		</label>
+	</div>
+		<div class="input-group">
+		<label>
+			Double Diplome : 
+		 <select class="form-control" id="sel1" ng-model="dt.doubleDiplome" placeholder="Tapez code Double Diplome">
+        <option>O</option>
+        <option>N</option>
+      </select>
+		</label>
+	</div>
+		<div class="input-group">
+		<label>
+			Fin Accreditation : <input type="text" class="form-control" ng-model="dt.finAccreditation" placeholder="Tapez code Fin Accreditation">
+		</label>
+	</div>	
+	<div class="input-group">
+		<label>
+			NO Anne : 
+		</label>
+	
+       <input type="text" class="form-control" ng-model="dt.n0Annee" placeholder="Tapez code NO Anne">
+	</div>
+		<div class="input-group">
+		<label>
+			Nom Formation : <input type="text"  class="form-control" ng-model="dt.nomFormation" placeholder="Tapez Nom Formation">
+		</label>
+	</div>
+	
+	<div class="input-group">
+
+		<button ng-click="updatefunc()" ng-hide="operation" class="btn btn-default"> <a href="#formations">Editer</button>
+		
+	</div>
+	
+	</div>
+	
+	</div>

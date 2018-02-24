@@ -1,0 +1,94 @@
+<div class="container" ng-controller="ajouterEnseignantController" >
+<div class="form" >
+	
+	<div class="input-group">
+		<label>
+			Code Enseignant <input  ng-disabled="!operation" type="text" class="form-control" ng-model="dt.noEnseignant" placeholder="Tapez code formation">
+		</label>
+	</div>
+	<div class="input-group">
+		<label>
+			Adresse : <input type="text" class="form-control" ng-model="dt.adresse" placeholder="Tapez Adresse">
+		</label>
+	</div>
+		<div class="input-group">
+		<label>
+			Code Postal: 
+	<input type="text" class="form-control" ng-model="dt.codePostal" placeholder="Tapez Code Postal">
+		</label>
+	</div>
+		<div class="input-group">
+		<label>
+			Email Personnelle : 
+			<input type="text" class="form-control" ng-model="dt.emailPerso" placeholder="Tapez Email Personnelle">
+	
+		</label>
+	</div>
+		<div class="input-group">
+		<label>
+			Email UBO: <input type="text" class="form-control" ng-model="dt.emailUbo" placeholder="Tapez Email UBO">
+		</label>
+	</div>	
+	<div class="input-group">
+		<label>
+			Mobile: <input type="text"  class="form-control" ng-model="dt.mobile" placeholder="Tapez Numéro Mobile">
+		</label>
+
+	</div>
+		<div class="input-group">
+		<label>
+			Nom : <input type="text"  class="form-control" ng-model="dt.nom" placeholder="Tapez Nom ">
+		</label>
+	</div>
+	
+		<div class="input-group">
+		<label>
+			Pays : <input type="text"  class="form-control" ng-model="dt.pays" placeholder="Tapez Pays">
+		</label>
+	</div>
+	
+	
+		<div class="input-group">
+		<label>
+			Prenom : <input type="text"  class="form-control" ng-model="dt.prenom" placeholder="Tapez Prenom ">
+		</label>
+	    </div>
+	
+	
+		<div class="input-group">
+		<label>
+			Sexe : <input type="text"  class="form-control" ng-model="dt.sexe" placeholder="Tapez Sexe">
+		</label>
+	</div>
+	
+	
+		<div class="input-group">
+		<label>
+			Telephone : <input type="text"  class="form-control" ng-model="dt.telephone" placeholder="Tapez Telephone">
+		</label>
+	</div>
+	
+	
+		<div class="input-group">
+		<label>
+			Type : <input type="text"  class="form-control" ng-model="dt.type" placeholder="Tapez Type">
+		</label>
+	</div>
+		
+		<div class="input-group">
+		<label>
+			Ville : <input type="text"  class="form-control" ng-model="dt.ville" placeholder="Tapez Ville">
+		</label>
+	</div>
+	
+	
+	
+	
+	<div class="input-group">
+		<button ng-click="savedata(dt)" ng-show="operation" class="btn btn-default" > <a href="#enseignant">Enregistrer</button>
+		
+		
+	</div>
+	</div>
+	</div>
+	

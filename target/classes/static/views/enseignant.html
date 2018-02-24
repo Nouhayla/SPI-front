@@ -1,0 +1,34 @@
+<div class="container" ng-controller="enseignantController" >
+
+<h1>Gestion des Enseignants</h1> 
+<!-- Indicates a successful or positive action -->
+
+<button class="btn btn-default"  class="btn btn-success"><a href="#ajouterEnseignant">Ajouter Enseignant</button></a>
+
+<table class="table">
+	<tr>
+		<th>Code Enseignant</th>
+		
+		<th>Nom Enseignant</th>
+		
+	</tr>
+	
+	<tr ng-repeat=" e in enseignants ">
+	
+		
+		<td> {{ e.noEnseignant }} </td>
+		<td> {{ e.nom }} </td>	
+		<td ><button ng-click=deletedata(e.noEnseignant) class="btn btn-default" >Supprimer</button> </td>
+		<td ><button ng-click="detail(e.nom)" class="btn btn-default" > <a href="#detailEnseignant/{{e.noEnseignant}}">Detail</button> </td>
+		
+			
+	</tr>
+	
+	
+
+
+</table>
+
+
+
+</div>
